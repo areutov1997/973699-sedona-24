@@ -19,31 +19,38 @@
       </nav>
     </header>
     <main class="cont">
-      <form class="serch_form">
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="checkbox" name=""></lable>
-        <label><input type="text" name=""></lable>
-        <label><input type="text" name=""></lable>
-        <button>показать</button>
+
+      <form  action="inner.html" method="get"  class="serch-form">
+        <label class="serch-element"><input type="checkbox" name="pool">Бассейн</label>
+        <label class="serch-element"><input type="checkbox" name="parks">Парковка</label>
+        <label class="serch-element"><input type="checkbox" name="wifi">wi-fi</label>
+        <label class="serch-element"><input type="checkbox" name="hotel">гостиница</label>
+        <label class="serch-element"><input type="checkbox" name="motel">мотель</label>
+        <label class="serch-element"><input type="checkbox" name="appartments">аппартоменты</label>
+        <p>стоимость в сутки(р):</p>
+            <input type="text" name="from">
+            <input type="text" name="to">
+        <div class="runner">
+            <input type="radio" name="runner" id="left">
+            <hr>
+            <input type="radio" name="runner" id="right">
+        </div>
+        <input type="submit" value="показать">
       </form>
       <article class="hotel">
         <div class="hotel-info">
         <h3 class="hotel-info-header">Amara resort & SPA</h3>
         <img src="img/amara_resort_spa.jpg" alt="фото отеля">
           <p class="hostel-info-text">гостиница от 4000 р.</p>
-          <button class="hotel-info-more">подробнее</button>
-          <button class="hotel-info-booking">забронировать</button>
+          <a hreft="hotel" class="hotel-info-more">подробнее</a>
+          <a hreft="hotel" class="hotel-info-booking">забронировать</a>
       </div>
         <div class="hotel-rating">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
-          <button class="hottel-rating-info">рейтинг:8,5</button>
+          <p class="hottel-rating-info">рейтинг:8,5</p>
         </div>
       </article>
       <article class="hotel">
@@ -51,14 +58,14 @@
         <h3 class="hotel-info-header">Desert quail inn</h3>
         <img src="img/desert_quail_inn.jpg" alt="фото отеля">
           <p class="hotel-info-text">мотель от 3000 р.</p>
-          <button class="hotel-info-more">подробнее</button>
-          <button class="hotel-info-booking">забронировать</button>
+          <a hreft="hotel" class="hotel-info-more">подробнее</a>
+          <a hreft="hotel" class="hotel-info-booking">забронировать</a>
       </div>
         <div class="hotel-rating">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
-          <button class="hottel-rating-info">рейтинг:8,9</button>
+          <p class="hottel-rating">рейтинг:8,9</p>
         </div>
       </article>
       <article class="hotel">
@@ -66,28 +73,42 @@
         <h3 class="hotel-info-header">Villas at poco diablo</h3>
         <img src="img/villas_at_poco_diablo.jpg" alt="фото отеля">
           <p class="hotel-info-text">апартаменты от 2000 р.</p>
-          <button class="hotel-info-more">подробнее</button>
-          <button class="hotel-info-booking">забронировать</button>
+          <a hreft="hotel" class="hotel-info-more">подробнее</a>
+          <a hreft="hotel" class="hotel-info-booking">забронировать</a>
       </div>
         <div class="hotel-rating">
           <img src="img/star.svg" alt="star">
           <img src="img/star.svg" alt="star">
-          <button class="hottel-rating-info">рейтинг:9,2</button>
+          <p class="hottel-rating-info">рейтинг:9,2</p>
         </div>
       </article>
     </main>
     <footer class="footer">
 
-      <p>#VISITSEDONA</p>
+      <div class="heshteg">#VISITSEDONA</div>
+
       <div class="contact_info">
-        <a class="twitter" href="http://twitter.com"><img src="img/twitter.svg" alt="titter"></a>
-        <a  class="fb" href="http://facebook.com"><img  src="img/fb-icon.svg" alt="facebook"></a>
-        <a  class="youtube" href="http://youtube.com"><img src="img/youtube.svg" alt="youtube"></a>
+        <a class="twitter" href="http://twitter.com">
+          <p class="visuali-hidden">twitter</p>
+          <img src="img/twitter.svg" alt="titter">
+        </a>
+        <a  class="fb" href="http://facebook.com">
+          <p class="visuali-hidden">facebook</p>
+          <img  src="img/fb-icon.svg" alt="facebook">
+        </a>
+        <a  class="youtube" href="http://youtube.com">
+          <p class="visuali-hidden">youtube</p>
+          <img src="img/youtube.svg" alt="youtube">
+        </a>
       </div>
+
       <div class="htmlacademy-ref">
-      <p>WEBSITE BY </p>
-      <a  href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy"></a>
-    </div>
+        <p class="htmlacademy-text">WEBSITE BY</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="htmlacademy-logo" src="img/logo-htmlacademy.svg" alt="htmlacademy">
+        </a>
+      </div>
+
     </footer>
   </body>
 </html>
