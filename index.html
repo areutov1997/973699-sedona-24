@@ -20,43 +20,114 @@
       <img class="baner" src="img/sedona-baner.jpg" alt="банер">
     </header>
     <main class="cont">
-      <h1 class="cont-heder">Седона</h1>
+      <h1 class="visuali-hidden">Седона</h1>
       <section class="cause">
-        <h2 class="cause-header">причины посетить</h2>
-        <p class="cause-text"><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-        расмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-        <ol>
-          <li><h3></h3><p></p><img></li>
-          <li><h3></h3><p></p><img></li>
-          <li><h3></h3><p></p></li>
-          <li><h3></h3><p></p></li>
-          <li><h3></h3><p></p></li>
-        </ol>
+        <h2 class="visuali-hidden">причины посетить</h2>
+        <p class="bold-text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p  class="cause-text">расмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <ul>
+          <li>
+            <h3 class="cause-header">Настоящий городок</h3>
+            <p class="cause-text">№1</p>
+            <p class="cause-text">Седона - не аттракцио для туристов, там течет своя жизнь</p>
+            <img src="img/real-city.jpg" alt="вид города">
+          </li>
+          <li>
+            <ul>
+              <li>
+                <h3 class="cause-header">Жилье</h3>
+                <p class="cause-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <img src="img/icon-1.svg" alt="дом">
+              </li>
+              <li>
+                <h3 class="cause-header">Еда</h3>
+                <p class="cause-text">Всегда заказываййте фирменный бургер, вы не разоча</p>
+                <img src="img/icon-3.svg" alt="бургер">
+              </li>
+              <li>
+                <h3 class="cause-header">Сувениры</h3>
+                <p class="cause-text">Не только китайского, но и местного производства!</p>
+                <img src="img/icon-2.svg" alt="коробка с бантом">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="cause-header">Там есть<br> мост дьявола</h3>
+            <p>№2</p>
+            <p>Да, по нему можно пройти!Если конечно вы осмелитксь</p>
+            <img src="img/devils-bridg.jpg" alt="мост дьявола">
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p class="cause-text">№3</p>
+            <p class="cause-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p class="cause-text">№4</p>
+            <p class="cause-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p class="cause-text">№5</p>
+            <p class="cause-text">Большинство едет в Гранд каньон и толпится там</p>
+          </li>
+        </Ul>
       </section>
       <section class="inter">
         <h2 class="inter-header">Заинтересовались?</h2>
-        <p class="inter-text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p  class="cause-text">укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="serch-hottel">поиск гостиницы в Седоне</button>
       </section>
       <section class="map" id="state_map">
-        <h2 class="">карта</h2>
-        <!--здесь будет карта-->
+        <h2 class="visuali-hidden" >карта</h2>
+        <img src="img/map.jpg" alt="карта">
       </section>
     </main>
     <footer class="footer">
 
-      <p>#VISITSEDONA</p>
+      <div class="heshteg">#VISITSEDONA</div>
       <div class="contact_info">
-        <a class="twitter" href="http://twitter.com"><img src="img/twitter.svg" alt="titter"></a>
-        <a  class="fb" href="http://facebook.com"><img  src="img/fb-icon.svg" alt="facebook"></a>
-        <a  class="youtube" href="http://youtube.com"><img src="img/youtube.svg" alt="youtube"></a>
+        <a class="twitter" href="http://twitter.com">
+          <p class="visuali-hidden">twitter</p>
+          <img src="img/twitter.svg" alt="titter">
+        </a>
+        <a  class="fb" href="http://facebook.com">
+          <p class="visuali-hidden">twitter</p>
+          <img  src="img/fb-icon.svg" alt="facebook">
+        </a>
+        <a  class="youtube" href="http://youtube.com">
+          <p class="visuali-hidden">youtube</p>
+          <img src="img/youtube.svg" alt="youtube">
+        </a>
       </div>
       <div class="htmlacademy-ref">
-      <p>WEBSITE BY</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy"></a>
+        <p class="htmlacademy-text">WEBSITE BY</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="htmlacademy-logo" src="img/logo-htmlacademy.svg" alt="htmlacademy">
+        </a>
       </div>
     </footer>
-   <section class="hostel-find">
-   <!--здесь будет всплывающая форма поиска гостиницы -->
- </section>
+    <section class="serch-hottel">
+      <form action="inner.html" method="get" >
+        <label>дата зазда:
+          <input type="text"  name="dat_arrival" class="date" value="24 апреля 2017">
+          <img class="date-picher" src="img/calendar.svg" alt="календарь">
+        </label>
+        <label>дата выезда:<input type="text" name="date_of_departure" class="date" value="4 июля 2017">
+          <img class="date-picher" src="img/calendar.svg" alt="календарь">
+        </label>
+        <label for="adult">взрослые:</label>
+        <input type="text" name="adult" id="adult">
+        <label for="children">дети:</label>
+        <input type="text" name="children" id="children">
+        <input type="submit" value="найти" >
+      </form>
+      <button name="add-adult" class="add-button">+</button>
+      <button name="sub-adult" class="sub-button">-</button>
+      <button name="add-children" class="add-button">+</button>
+      <button name="sub-children" class="sub-button">-</button>
+    </section>
   </body>
 </html>
